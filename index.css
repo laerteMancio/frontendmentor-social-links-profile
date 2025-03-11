@@ -15,7 +15,7 @@ body {
   height: 100vh;
   margin: 0;
   background-color: hsl(0, 0%, 8%);
-  overflow: hidden;
+  
 
   font-family: "Inter", sans-serif;
 }
@@ -39,8 +39,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
-  height: 70%;
+  
   padding: 20px 0 20px 0;
 
   border-radius: 10px;
@@ -65,7 +64,6 @@ img {
   height: auto;
 
   line-height: 10px;
-  
 }
 
 .dados-pessoa p {
@@ -78,7 +76,7 @@ img {
   justify-content: center;
   align-items: center;
 
-  width: 80%;
+  width: 100%;
   height: auto;
 
   gap: 10px;
@@ -90,7 +88,7 @@ main a {
   justify-content: center;
   align-items: center;
 
-  width: 100%;
+  width: 70%;
   height: 32px;
   border-radius: 10px;
 
@@ -113,7 +111,19 @@ main a:hover {
 @media (max-width: 767px) {
   main {
     gap: 10px;
-    justify-content: center;
+    justify-content: center;   
+    
+    padding: 5%;
+    
+
+    
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  main a {
     width: 90%;
   }
 
@@ -121,30 +131,32 @@ main a:hover {
     padding-bottom: 20px;
   }
 
-  button {
-    height: 42px;
-  }
+ 
 }
 
-@media only screen and (max-width: 768px) and (orientation: landscape) and (min-device-width: 320px) and (max-device-width: 768px) {
-  body {
-    height: auto;
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  main {
+    gap: 10px;
+    justify-content: center;
+    
+    
+    
+    
   }
 
-  .main {
-    height: auto;
-  }
-  img {
-    height: 70px;
+  .dados-pessoa {
+    padding-bottom: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   main {
-    overflow: auto;
     gap: 10px;
+    justify-content: center;
+    margin: 10%;
+    
   }
 
-  button {
-    height: 42px;
+  .dados-pessoa {
+    padding-bottom: 20px;
   }
 }
