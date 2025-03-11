@@ -17,8 +17,7 @@ body {
   background-color: hsl(0, 0%, 8%);
   overflow: hidden;
 
-  font-family: 'Inter', sans-serif;
-  
+  font-family: "Inter", sans-serif;
 }
 
 h1,
@@ -42,7 +41,7 @@ main {
   align-items: center;
 
   height: 70%;
-  padding: 30px;
+  padding: 20px 0 20px 0;
 
   border-radius: 10px;
   background-color: hsl(0, 0%, 12%);
@@ -63,29 +62,34 @@ img {
   justify-content: center;
   align-items: center;
 
-  width: auto;
   height: auto;
 
   line-height: 10px;
+  
 }
 
 .dados-pessoa p {
   color: hsl(75, 94%, 57%);
 }
 
-#buttons {
+#links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  width: 100%;
+  width: 80%;
   height: auto;
 
   gap: 10px;
 }
 
-button {
+main a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
   height: 32px;
   border-radius: 10px;
@@ -100,7 +104,7 @@ button {
   font-weight: 700;
 }
 
-button:hover {
+main a:hover {
   background-color: hsl(75, 94%, 57%);
   cursor: pointer;
   color: hsl(0, 0%, 8%);
@@ -108,8 +112,9 @@ button:hover {
 
 @media (max-width: 767px) {
   main {
-    height: 70%;
     gap: 10px;
+    justify-content: center;
+    width: 90%;
   }
 
   .dados-pessoa {
@@ -121,28 +126,22 @@ button:hover {
   }
 }
 
-@media only screen and (max-width: 768px) and (orientation: landscape) {
+@media only screen and (max-width: 768px) and (orientation: landscape) and (min-device-width: 320px) and (max-device-width: 768px) {
   body {
-    overflow: auto;
+    height: auto;
   }
 
-  main {
-    height: 70%;
-    overflow: auto;
+  .main {
+    height: auto;
   }
   img {
-    margin-top: auto;
+    height: 70px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   main {
-    height: 70%;
     overflow: auto;
     gap: 10px;
-  }
-
-  .dados-pessoa {
-    padding-bottom: 20px;
   }
 
   button {
