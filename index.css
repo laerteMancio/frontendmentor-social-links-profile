@@ -1,0 +1,151 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  margin: 0;
+  background-color: hsl(0, 0%, 8%);
+  overflow: hidden;
+
+  font-family: 'Inter', sans-serif;
+  
+}
+
+h1,
+p {
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(0, 2%, 78%);
+
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 70%;
+  padding: 30px;
+
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 12%);
+}
+
+img {
+  max-width: 100%;
+  height: 15%;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.dados-pessoa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: auto;
+  height: auto;
+
+  line-height: 10px;
+}
+
+.dados-pessoa p {
+  color: hsl(75, 94%, 57%);
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+
+  gap: 10px;
+}
+
+button {
+  width: 100%;
+  height: 32px;
+  border-radius: 10px;
+
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+
+  border: none;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: hsl(75, 94%, 57%);
+  cursor: pointer;
+  color: hsl(0, 0%, 8%);
+}
+
+@media (max-width: 767px) {
+  main {
+    height: 70%;
+    gap: 10px;
+  }
+
+  .dados-pessoa {
+    padding-bottom: 20px;
+  }
+
+  button {
+    height: 42px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  body {
+    overflow: auto;
+  }
+
+  main {
+    height: 70%;
+    overflow: auto;
+  }
+  img {
+    margin-top: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    height: 70%;
+    overflow: auto;
+    gap: 10px;
+  }
+
+  .dados-pessoa {
+    padding-bottom: 20px;
+  }
+
+  button {
+    height: 42px;
+  }
+}
