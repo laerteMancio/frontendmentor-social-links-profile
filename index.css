@@ -15,7 +15,6 @@ body {
   height: 100vh;
   margin: 0;
   background-color: hsl(0, 0%, 8%);
-  
 
   font-family: "Inter", sans-serif;
 }
@@ -39,7 +38,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  
+
   padding: 20px 0 20px 0;
 
   border-radius: 10px;
@@ -111,12 +110,9 @@ main a:hover {
 @media (max-width: 767px) {
   main {
     gap: 10px;
-    justify-content: center;   
-    
-    padding: 5%;
-    
+    justify-content: center;
 
-    
+    padding: 5%;
   }
 
   p {
@@ -130,30 +126,40 @@ main a:hover {
   .dados-pessoa {
     padding-bottom: 20px;
   }
-
- 
 }
 
 @media only screen and (max-width: 768px) and (orientation: landscape) {
+  body {
+    height: auto;
+  }
   main {
     gap: 10px;
     justify-content: center;
-    
-    
-    
-    
+    height: auto;
+  }
+
+  img {
+    height: 100px;
   }
 
   .dados-pessoa {
     padding-bottom: 20px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    height: auto;
+  }
   main {
     gap: 10px;
     justify-content: center;
     margin: 10%;
-    
+    height: auto;
+  }
+
+  img {
+    height: 100px;
   }
 
   .dados-pessoa {
